@@ -10,6 +10,7 @@
 
 <body>
 <header>
+	<!--background animated lines-->
   <div class="lines">
     <div class="line"></div>
     <div class="line"></div>
@@ -17,10 +18,30 @@
     <div class="line"></div>
     <div class="line"></div>
   </div>
+	<!--background animated lines-->
+	
+	<!-- MOBILE NAV   -->
+	          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Info</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+          </nav>
+	
+	<!--    @LARGE SCREEN DRAWER NAVBAR     -->
   <div class="menu">
     <div class="title">MENU</div>
     <ul class="nav">
       <li><img src="assets/images/selfie.jpg" height="100" class="selfie" alt="projet" /></li>
+	  <li><a href="https://www.linkedin.com/in/emilie-verdier-052a161b0/"><i class="fab fa-linkedin fa-2x"></i></a></li>
       <li><a href="#gallery">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#">Work</a></li>
@@ -28,6 +49,9 @@
     </ul>
   </div>
 </header>
+	<!--    @LARGE SCREEN DRAWER NAVBAR     -->
+	
+<!--       GALLERY        -->	
 <section id="gallery">
   <div id="gallery-header">
     <h2>Portfolio Emilie</h2>
@@ -50,14 +74,18 @@
     <div class="gallery-image img-hover htmlcss"> <img src="assets/images/htmlcss3.jpg"> </div>
   </div>
 </section>
-<!--               ABOUT                   -->
+<!--       GALLERY        -->	
+
+<!--        ABOUT         -->
 <section id="about">
   <h2>A propos de moi</h2>
   <img src="assets/images/selfie.jpg" height="300" id="selfie" alt="projet" />
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatem impedit quae ex earum alias! Ex tempora nemo doloremque placeat iusto nulla veniam nihil totam esse, minus neque sapiente dolores, sint dicta ipsa iure nostrum eos distinctio earum, nisi veritatis, ipsum beatae aliquid ullam. Voluptates consequatur reiciendis accusantium tenetur, cumque ducimus dolores ratione vitae temporibus cupiditate hic perferendis, modi libero veritatis amet numquam atque. Dicta, eos, quasi. Commodi, voluptas aliquam recusandae alias dolores culpa quidem asperiores, animi ad vel distinctio quam quod at natus enim, doloribus ipsam assumenda repudiandae, delectus nemo suscipit facilis quaerat amet eligendi? Aliquam debitis, similique repellat.</p>
 </section>
+<!--        ABOUT         -->
+	
 <!--        EXPRIENCE      -->
-<section id="xp">
+<section class="container" id="xp">
   <div id="ctn-accordion">
     <button class="accordion">Section 1</button>
     <div class="panel">
@@ -74,16 +102,27 @@
   </div>
 	<div class="card" id="timeline"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut rerum consectetur magni, dolor illum voluptatem iusto, inventore quis, saepe qui nihil laudantium repudiandae accusantium praesentium quas iure. Quibusdam delectus voluptates rerum enim! Nostrum, sapiente perferendis maxime, voluptatum error quibusdam animi et magni possimus facilis quia fugit ducimus ut cum! Sed, minima. Omnis laborum fugit non voluptatum inventore alias, est autem molestias velit doloremque magni magnam quas dignissimos, debitis sit nostrum voluptatibus adipisci beatae neque similique ipsum odit nulla impedit.</p></div>
 </section>
-<!--         CONTACt FORM          -->
-<section id="contact">
-  <h2>Envie d'en savoir plus ?</h2>
+<!--        EXPeRIENCE      -->
+	
+	
+<!--       CONTACt FORM     -->
+	<div class="contact-header">  <h2>Envie d'en savoir plus ?</h2></div>
+<section class="container" id="contact">
+		<!-- form à remplacer
   <form id="form" class="topBefore">
-    <input id="name" type="text" placeholder="NAME">
-    <input id="email" type="text" placeholder="E-MAIL">
-    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-    <input id="submit" type="submit" value="GO!">
-  </form>
+    <input id="name" type="text" placeholder="Nom">
+    <input id="email" type="text" placeholder="E-mail">
+    <textarea id="message" type="text" placeholder="Votre message"></textarea>
+    <input id="submit" type="submit" value="Envoyer">
+  </form> -->
+	<div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut rerum consectetur magni, dolor illum voluptatem iusto, inventore quis, saepe qui nihil laudantium repudiandae accusantium praesentium quas iure. Quibusdam delectus voluptates rerum enim! Nostrum, sapiente perferendis maxime, voluptatum error quibusdam animi et magni possimus facilis quia fugit ducimus ut cum! Sed, minima. Omnis laborum fugit non voluptatum inventore alias, est autem molestias velit doloremque magni magnam quas dignissimos, debitis sit nostrum voluptatibus adipisci beatae neque similique ipsum odit nulla impedit.</p>
+	</div>
+  
+	<div class="card"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut rerum consectetur magni, dolor illum voluptatem iusto, inventore quis, saepe qui nihil laudantium repudiandae accusantium praesentium quas iure. Quibusdam delectus voluptates rerum enim! Nostrum, sapiente perferendis maxime, voluptatum error quibusdam animi et magni possimus facilis quia fugit ducimus ut cum! Sed, minima. Omnis laborum fugit non voluptatum inventore alias, est autem molestias velit doloremque magni magnam quas dignissimos, debitis sit nostrum voluptatibus adipisci beatae neque similique ipsum odit nulla impedit.</p>
+	</div>
 </section>
+<!--       CONTACt FORM     -->
+	
 <footer> </footer>
 <script src="assets/js/script.js"></script> 
 <script src="https://kit.fontawesome.com/630dbf8ee1.js" crossorigin="anonymous"></script>
