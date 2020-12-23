@@ -405,6 +405,17 @@ input[type=submit] {
 	margin: auto;
 	
 }
+/*footer*/
+footer {
+width: 100%;
+height: auto;
+	background-color: #0d132270;
+	color: rgba(72,67,104,1.00); 
+	text-align: center;
+	padding: 3px;
+}
+
+
 /* MOBILE NAV */
 @media (min-width: 900px) {
   nav {
