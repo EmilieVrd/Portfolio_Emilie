@@ -52,6 +52,9 @@ h2 {
   color: #f0a500;
   font-size: 3em;
 }
+svg {
+	width:50px;
+}
 @media (max-width: 900px) {
 	h2 {
 		font-size: 2em;
@@ -279,6 +282,14 @@ gallery-wrapper {
   display: block;
 }
 /********** exp *************/
+.skills {
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+	margin-bottom: 1rem;
+	color: #eacf86ff;
+
+}
 /*->Minigrid*/
 .container {
   max-width: 1300px;
@@ -500,7 +511,9 @@ nav {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
-
+#menu a {
+	color: black;
+}
 /* LINES BACKGROUND ANIMATION */
 .lines {
   position: absolute;
