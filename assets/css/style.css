@@ -33,6 +33,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /*START of my CSS*/
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -280,8 +281,8 @@ gallery-wrapper {
 }
 .card {
   background-color: #abbcc9;
-  color: white;
-  padding: 1rem;
+  color: #eacf86;
+  padding: 0.5rem;
   clear: both;
   overflow: hidden;
 }
@@ -303,11 +304,9 @@ gallery-wrapper {
   transition: 0.4s;
   border: 1px dotted;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #96A4AE;
 }
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: #161c2c;
@@ -317,123 +316,73 @@ gallery-wrapper {
 }
 /* *******CONTACT ************/
 .contact-header {}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-input::placeholder, textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
-}
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-/* on hover placeholder */
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
-}
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
-}
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #cbc6c1;
-}
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
-}
-#form {
-  position: relative;
-  width: 400px;
-}
-input {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  max-width: 400px;
+input[type=text], select, textarea{
   width: 100%;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
-  border-bottom: none;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+  padding: 12px;
+  border: 1px solid lightblue;
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #161c2c;
 }
-input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+input[type=text]:focus, select:focus, textarea:focus {
+	background: LightYellow;
 }
-textarea {
-  max-width: 400px;
-  width: 100%;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  border: solid 1px #b3aca7;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
-textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-#submit {
-  width: 502px;
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  color: #b3aca7;
-  outline: none;
+
+input[type=submit] {
+  background-color: #eacf86;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border: solid 1px #b3aca7;
-  border-top: none;
+  float: right;
 }
-#submit:hover {
-  color: #e2dedb;
+.container-form {
+  border-radius: 5px;
+  background-color: #161c2c;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+	/*form<-*/
+#contact-info {
+	display: flex;
+	height: 50%;
+	margin: auto;
+}
+.contact-info {
+	width: 100%;
+	background-color: #161C2C;
+	border-radius: 4px;
+	text-align: justify;
+	margin: auto;
+	
 }
 /* MOBILE NAV */
 @media (min-width: 900px) {
