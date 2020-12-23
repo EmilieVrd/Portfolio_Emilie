@@ -38,6 +38,14 @@ table {
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   font-family: 'Bellota Text', cursive;
+	scroll-behavior: smooth;
+}
+a {
+	color: #ABBCC9;
+}
+a:hover {
+	color: #161C2C;
+	background-color: #EACF86;
 }
 h2 {
   font-family: 'Bellota', cursive;
@@ -83,7 +91,7 @@ h2 {
 }
 .menu .nav {
   position: absolute;
-  top: 40%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -109,7 +117,7 @@ h2 {
   padding-bottom: 10px;
 }
 .menu ul li:nth-child(2) {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 @media (max-width: 900px) {
   .menu {
@@ -259,8 +267,9 @@ gallery-wrapper {
   margin: auto;
   width: 90%;
   max-width: 1300px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   color: #eacf86;
+	text-align: justify;
 }
 #selfie {
   border-radius: 100%;
@@ -282,7 +291,7 @@ gallery-wrapper {
 .card {
   background-color: #abbcc9;
   color: #eacf86;
-  padding: 0.5rem;
+  padding: 0.4rem;
   clear: both;
   overflow: hidden;
 }
@@ -292,7 +301,7 @@ gallery-wrapper {
   }
 }
 /*Minigrid<-*/
-#timeline {}
+
 .accordion {
   background-color: #161c2c;
   color: #EACF86;
@@ -314,12 +323,22 @@ gallery-wrapper {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+.ul-formations {
+	background-color: #161c2c;
+	border: 1px dotted #EACF86;
+	padding: 10px;
+}
+.ul-formations li{
+	margin-top: 10px;
+}
+.underline {
+	text-decoration: underline steelblue;
+}
 /* *******CONTACT ************/
 .contact-header {}
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
-  border: 1px solid lightblue;
   border: 1px solid lightblue;
   border-radius: 4px;
   box-sizing: border-box;
@@ -373,13 +392,15 @@ input[type=submit] {
 	/*form<-*/
 #contact-info {
 	display: flex;
-	height: 50%;
+	height: auto;
 	margin: auto;
 }
 .contact-info {
 	width: 100%;
+	padding: 10px;
 	background-color: #161C2C;
 	border-radius: 4px;
+	border: 1px dotted #EACF86;
 	text-align: justify;
 	margin: auto;
 	
